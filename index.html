@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Creative Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="gradient-bg"></div>
+        <canvas id="particles"></canvas>
+    </div>
+
+    <!-- Cursor Effect -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">Portfolio</span>
+                <span class="logo-dot">.</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#works" class="nav-link">Works</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting animate-slide-up">Hello, I'm</p>
+                <h1 class="hero-name animate-slide-up delay-1">
+                    <span class="gradient-text">Creative</span>
+                    <span class="hero-name-line">Developer</span>
+                </h1>
+                <div class="typing-container animate-slide-up delay-2">
+                    <span class="typing-text"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-description animate-slide-up delay-3">
+                    美しいデザインと革新的な技術で、<br>
+                    あなたのアイデアを現実にします。
+                </p>
+                <div class="hero-buttons animate-slide-up delay-4">
+                    <a href="#works" class="btn btn-primary">
+                        <span>View Works</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Contact Me</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual animate-fade-in delay-2">
+                <div class="hero-shape shape-1"></div>
+                <div class="hero-shape shape-2"></div>
+                <div class="hero-shape shape-3"></div>
+                <div class="hero-avatar">
+                    <div class="avatar-glow"></div>
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <span class="scroll-text">Scroll</span>
+            <span class="scroll-line"></span>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">自己紹介</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image reveal-left">
+                    <div class="about-image-wrapper">
+                        <div class="about-image-bg"></div>
+                        <div class="about-image-frame">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                        <div class="floating-badge badge-1">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text reveal-right">
+                    <h3>Passionate Developer & Designer</h3>
+                    <p>
+                        5年以上の経験を持つフルスタック開発者として、
+                        ユーザー体験を最優先にしたWebアプリケーションを構築しています。
+                        モダンな技術スタックを活用し、パフォーマンスと美しさを両立させた
+                        プロダクトを提供することを心がけています。
+                    </p>
+                    <p>
+                        デザインからバックエンドまで一貫して対応可能。
+                        常に新しい技術を学び続け、より良いソリューションを追求しています。
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="50">0</span>
+                            <span class="stat-plus">+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="5">0</span>
+                            <span class="stat-plus">+</span>
+                            <span class="stat-label">Years Exp</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="30">0</span>
+                            <span class="stat-plus">+</span>
+                            <span class="stat-label">Clients</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Let's Talk</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Skills</span>
+                <h2 class="section-title">スキルセット</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal-up">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>Frontend</h3>
+                    <p>React, Vue.js, TypeScript, Next.js</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="95"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal-up delay-1">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>Backend</h3>
+                    <p>Node.js, Python, Go, PostgreSQL</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal-up delay-2">
+                    <div class="skill-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Design</h3>
+                    <p>Figma, Adobe XD, UI/UX Design</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal-up delay-3">
+                    <div class="skill-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3>Cloud</h3>
+                    <p>AWS, GCP, Docker, Kubernetes</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-marquee">
+                <div class="marquee-content">
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>Next.js</span>
+                    <span>Vue.js</span>
+                    <span>Node.js</span>
+                    <span>Python</span>
+                    <span>Go</span>
+                    <span>PostgreSQL</span>
+                    <span>MongoDB</span>
+                    <span>Redis</span>
+                    <span>Docker</span>
+                    <span>Kubernetes</span>
+                    <span>AWS</span>
+                    <span>Figma</span>
+                </div>
+                <div class="marquee-content">
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>Next.js</span>
+                    <span>Vue.js</span>
+                    <span>Node.js</span>
+                    <span>Python</span>
+                    <span>Go</span>
+                    <span>PostgreSQL</span>
+                    <span>MongoDB</span>
+                    <span>Redis</span>
+                    <span>Docker</span>
+                    <span>Kubernetes</span>
+                    <span>AWS</span>
+                    <span>Figma</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <section id="works" class="works section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">制作実績</h2>
+            </div>
+            <div class="works-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web App</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="works-grid">
+                <div class="work-card reveal-up" data-category="web">
+                    <div class="work-image">
+                        <div class="work-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="work-overlay">
+                            <a href="#" class="work-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="work-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <span class="work-category">Web Application</span>
+                        <h3>E-Commerce Platform</h3>
+                        <p>モダンなオンラインショッピング体験</p>
+                        <div class="work-tech">
+                            <span>Next.js</span>
+                            <span>Stripe</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-card reveal-up delay-1" data-category="mobile">
+                    <div class="work-image">
+                        <div class="work-placeholder">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="work-overlay">
+                            <a href="#" class="work-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="work-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <span class="work-category">Mobile App</span>
+                        <h3>Health Tracker</h3>
+                        <p>健康管理をシンプルに</p>
+                        <div class="work-tech">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-card reveal-up delay-2" data-category="design">
+                    <div class="work-image">
+                        <div class="work-placeholder">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <div class="work-overlay">
+                            <a href="#" class="work-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="work-link"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <span class="work-category">UI/UX Design</span>
+                        <h3>Dashboard Design</h3>
+                        <p>データビジュアライゼーション</p>
+                        <div class="work-tech">
+                            <span>Figma</span>
+                            <span>Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-card reveal-up delay-3" data-category="web">
+                    <div class="work-image">
+                        <div class="work-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="work-overlay">
+                            <a href="#" class="work-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="work-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <span class="work-category">Web Application</span>
+                        <h3>AI Chat Platform</h3>
+                        <p>AIを活用したカスタマーサポート</p>
+                        <div class="work-tech">
+                            <span>Python</span>
+                            <span>OpenAI</span>
+                            <span>WebSocket</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">お問い合わせ</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info reveal-left">
+                    <h3>Let's Work Together</h3>
+                    <p>
+                        プロジェクトのご相談やお見積もりなど、
+                        お気軽にお問い合わせください。
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span>Email</span>
+                                <a href="mailto:hello@portfolio.dev">hello@portfolio.dev</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span>Location</span>
+                                <p>Tokyo, Japan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Dribbble">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form reveal-right" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">お名前</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">メールアドレス</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">メッセージ</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>送信する</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Portfolio</span>
+                    <span class="logo-dot">.</span>
+                </div>
+                <p class="footer-text">Crafted with <i class="fas fa-heart"></i> and lots of coffee</p>
+                <p class="footer-copyright">&copy; 2024 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
