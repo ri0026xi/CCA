@@ -276,11 +276,11 @@ function initTypingAnimation() {
     if (!typingText) return;
 
     const texts = [
-        'Web Developer',
-        'UI/UX Designer',
-        'Full Stack Engineer',
-        'Creative Coder',
-        'Problem Solver'
+        'Python Developer',
+        'C# Engineer',
+        'AWS Architect',
+        'PLC Programmer',
+        'Automation Expert'
     ];
 
     let textIndex = 0;
