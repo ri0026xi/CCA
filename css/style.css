@@ -754,6 +754,18 @@ img {
     overflow: hidden;
 }
 
+.about-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.about-image-frame:hover img {
+    transform: scale(1.05);
+}
+
 .floating-badge {
     position: absolute;
     width: 60px;
